@@ -1,0 +1,19 @@
+function calculate() {
+  const [a, b, operator] = this; 
+  switch (operator) {
+    case '+':
+      return a + b;
+    case '-':
+      return a - b;
+    case '*':
+      return a * b;
+    case '/':
+      return b !== 0 ? a / b : 'Ошибка: деление на ноль';
+    default:
+      return 'Неизвестный оператор';
+  }
+}
+const params = [2, 3, '+'];
+
+const result = calculate.apply(params);
+console.log(result); 
