@@ -1,0 +1,6 @@
+function getUniqueSortedNumbers(arr) {
+  const uniqueNumbers = new Set(arr);
+  return Array.from(uniqueNumbers).sort((a, b) => a - b);
+}
+const numbers = [4, 2, 5, 2, 3, 4, 1];
+console.log(getUniqueSortedNumbers(numbers)); 
