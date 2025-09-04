@@ -1,0 +1,97 @@
+  * {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+  }
+
+  button{
+    margin: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  h1{
+    color:#A60000;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;   
+    align-items: center; 
+  }
+
+  .container__start_button,
+.container__clean_button {
+  width: 300px;                 
+  margin: 10px 0;               
+  display: flex;               
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;              
+  border: none;                
+  border-radius: 10px;           
+
+}
+
+.container__start_button {
+  background-color: #FF7373;
+  padding: 10px;
+}
+
+.container__start_button:hover {
+  background-color: #FF4040;
+}
+
+.container__clean_button {
+  background-color: #5CCCCC;
+  padding: 6px;
+  font-size: 20px;
+}
+
+.container__clean_button:hover {
+  background-color: #009999;
+}
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto;
+    justify-content: center; 
+  }
+  
+  .gallery img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px; 
+    box-shadow: 4px 4px 8px rgba(92, 204, 204, 0.5); 
+    object-fit: cover; 
+  }
+.messages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.messages > div{
+    text-align: center;
+}
+ #messages__errorMessage{
+     display:none; 
+    }
+
+#messages__loader {
+    display: none;
+    width: 100%;
+    background-color: #C0C0C0;
+    text-align: center;
+    padding-bottom: 5em;
+    padding-top: 5em;
+}   
+@media screen and (max-width: 414px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+      } 
+    }
